@@ -1,0 +1,27 @@
+name: gaussian_splatting_macos
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  # Apple Silicon helper environment.
+  # This is intended for code reading, dataset/preprocessing utilities,
+  # and other non-CUDA Python workflows on macOS.
+  #
+  # It does NOT make training or rendering in this repo work on macOS:
+  # the core pipeline and bundled extensions are CUDA-only.
+  - python=3.10
+  - pip
+  - setuptools
+  - wheel
+  - numpy<2
+  - pillow
+  - plyfile
+  - tqdm
+  - joblib
+  - opencv
+  - scipy
+  - pytorch=2.2.*
+  - torchvision=0.17.*
+  - torchaudio=2.2.*
+  - tensorboard

@@ -1,8 +1,12 @@
 *.pyc
+.DS_Store
 .vscode
+.miniforge3
 output
 build
 diff_rasterization/diff_rast.egg-info
 diff_rasterization/dist
 tensorboard_3d
 screenshots
+gaussian-splatting.code-workspace
+data_sets/**/*.heif
